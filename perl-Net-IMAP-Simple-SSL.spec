@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Net
-%define	pnam	IMAP-Simple-SSL
+%define		pdir	Net
+%define		pnam	IMAP-Simple-SSL
 Summary:	Net::IMAP::Simple::SSL - SSL support for Net::IMAP::Simple
 Summary(pl):	Net::IMAP::Simple::SSL - obs³uga SSL dla Net::IMAP::Simple
 Name:		perl-Net-IMAP-Simple-SSL
