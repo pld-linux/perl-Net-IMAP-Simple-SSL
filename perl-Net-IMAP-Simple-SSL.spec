@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	IMAP-Simple-SSL
 Summary:	Net::IMAP::Simple::SSL - SSL support for Net::IMAP::Simple
-Summary(pl):	Net::IMAP::Simple::SSL - obs³uga SSL dla Net::IMAP::Simple
+Summary(pl.UTF-8):   Net::IMAP::Simple::SSL - obsÅ‚uga SSL dla Net::IMAP::Simple
 Name:		perl-Net-IMAP-Simple-SSL
 Version:	1.3
 Release:	1
@@ -29,9 +29,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module is a subclass of Net::IMAP::SImple that includes SSL
 support. The interface is identical.
 
-%description -l pl
-Ten modu³ jest podklas± Net::IMAP::Simple dodaj±c± obs³ugê
-protoko³u SSL. Interfejs w obu klasach jest identyczny.
+%description -l pl.UTF-8
+Ten moduÅ‚ jest podklasÄ… Net::IMAP::Simple dodajÄ…cÄ… obsÅ‚ugÄ™
+protokoÅ‚u SSL. Interfejs w obu klasach jest identyczny.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
