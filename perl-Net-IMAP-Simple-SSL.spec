@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	IMAP-Simple-SSL
 Summary:	Net::IMAP::Simple::SSL - SSL support for Net::IMAP::Simple
-Summary(pl.UTF-8):   Net::IMAP::Simple::SSL - obsługa SSL dla Net::IMAP::Simple
+Summary(pl.UTF-8):	Net::IMAP::Simple::SSL - obsługa SSL dla Net::IMAP::Simple
 Name:		perl-Net-IMAP-Simple-SSL
 Version:	1.3
 Release:	1
