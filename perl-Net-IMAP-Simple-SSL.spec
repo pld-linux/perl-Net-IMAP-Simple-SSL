@@ -9,7 +9,7 @@ Summary:	Net::IMAP::Simple::SSL - SSL support for Net::IMAP::Simple
 Summary(pl.UTF-8):	Net::IMAP::Simple::SSL - obsługa SSL dla Net::IMAP::Simple
 Name:		perl-Net-IMAP-Simple-SSL
 Version:	1.3
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -18,9 +18,9 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	perl(Test::More)
 BuildRequires:	perl-IO-Socket-SSL
 BuildRequires:	perl-Net-IMAP-Simple >= 0.95
-BuildRequires:	perl(Test::More)
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -30,8 +30,8 @@ This module is a subclass of Net::IMAP::SImple that includes SSL
 support. The interface is identical.
 
 %description -l pl.UTF-8
-Ten moduł jest podklasą Net::IMAP::Simple dodającą obsługę
-protokołu SSL. Interfejs w obu klasach jest identyczny.
+Ten moduł jest podklasą Net::IMAP::Simple dodającą obsługę protokołu
+SSL. Interfejs w obu klasach jest identyczny.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -55,5 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorlib}/Net/IMAP/Simple
 %{perl_vendorlib}/Net/IMAP/Simple/SSL.pm
 %{_mandir}/man3/*
