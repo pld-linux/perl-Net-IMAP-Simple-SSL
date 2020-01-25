@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Net
 %define		pnam	IMAP-Simple-SSL
 Summary:	Net::IMAP::Simple::SSL - SSL support for Net::IMAP::Simple
